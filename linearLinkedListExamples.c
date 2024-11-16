@@ -6,56 +6,14 @@ struct node{
     struct node *next;
 }*head;
 
-
-void print(struct node *head){
-    struct node *temp;
-    
-    if (head == NULL)
-        printf("List is empty");
-    
-    else {
-        temp = head;
-        printf("\n Linked List :");
-        while (temp != NULL){
-            printf("%d ",temp -> data);
-            temp = temp -> next;
-        }
-    }
-    
-}
-    
-struct node *addHead(struct node *head, int key) {
-    struct node *temp = (struct node *)malloc(sizeof(struct node));
-    if (temp == NULL) {
-        printf("Memory allocation failed\n");
-        return head; 
-    }
-
-    temp->data = key;
-    temp->next = head;
-    head = temp;
-    return head;  
-}
-
-
-struct node *addLast(struct node *head,int key){
-    struct node *temp = (struct node *)malloc(sizeof(struct node));
-    temp -> data = key ;
-    temp -> next = NULL;
-
-    struct node *temp2 = head;
-
-    while (temp2 -> next != NULL)
-        temp2 = temp2 -> next;
-    temp2 -> next = temp;
-    return head;
-}
+void print();
+void addHead();
+void addLast();
 
 
 // Başa ve sona eleman eklemek
 int main(){
-    int key;
-    int key2;
+    int key , key2;
     // Linked List oluşturma 
     struct node *head = (struct node*)malloc(sizeof(struct node));
 
@@ -65,13 +23,57 @@ int main(){
     printf("Başa eklemek istediğiniz sayı : ");
     scanf("%d",&key);
 
-    head = addHead(head,key);
+    addHead(&head,key);
 
     printf("Sona eklemek istediğiniz sayı : ");
     scanf("%d",&key2);
 
-    head = addLast(head,key);
+    addLast(head,key2);
     
     print(head);
     return 0;
+}
+
+
+void print(struct node *head){
+    struct node *temp = head;;
+    
+    if (head == NULL){
+        printf("List is empty");
+        return;
+    }
+
+    printf("\n Linked List :");
+
+    while (temp != NULL){
+        printf("%p adresindeki düğümün verisi %d\n", temp, temp->data);
+        temp = temp -> next;
+    }
+    
+}
+    
+void addHead(struct node **head, int key) {
+    struct node *temp = (struct node *)malloc(sizeof(struct node));
+    if (temp == NULL) {
+        printf("Memory allocation failed\n");
+        return ; 
+    }
+
+    temp -> data = key;
+    temp -> next = *head;
+    *head = temp;  
+}
+
+
+void addLast(struct node *head,int key){
+    struct node *temp = (struct node *)malloc(sizeof(struct node));
+    temp -> data = key ;
+    temp -> next = NULL;
+
+    struct node *temp2 = head;
+
+    while (temp2 -> next != NULL)
+        temp2 = temp2 -> next;
+    temp2 -> next = temp;
+    
 }
