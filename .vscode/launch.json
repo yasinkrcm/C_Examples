@@ -29,7 +29,7 @@
             "name": "(gdb) Launch - Windows",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}\\exes\\${fileBasename}",
+            "program": "${fileDirname}/exes/${fileBasenameNoExtension}",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
