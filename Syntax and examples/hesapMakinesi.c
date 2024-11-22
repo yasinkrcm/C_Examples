@@ -39,7 +39,7 @@ int main(){
 
     result =  hesapMakinesi(op,num1,num2,result);
 
-    printf(" Cevap : %.2f ",result);
+    printf(" Cevap : %.2f \n",result);
 
     return 0 ;
 }

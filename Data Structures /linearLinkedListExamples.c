@@ -43,7 +43,7 @@ void print(struct node *head){
         return;
     }
 
-    printf("\n Linked List :");
+    printf("\n Linked List :\n");
 
     while (temp != NULL){
         printf("%p adresindeki düğümün verisi %d\n", temp, temp->data);
