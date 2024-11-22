@@ -9,7 +9,7 @@ int main(){
     printf("Sayı : ");
     scanf("%d",&n);
 
-    if (n == 1)
+    if (n <= 1)
         asalMi = 0;
 
     for (int i = 2; i <= n / 2; i++)
