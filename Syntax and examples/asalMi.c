@@ -5,7 +5,7 @@
 int main(){
     bool asalMi = 1;
     int n ;
-    
+    printf("a");
     printf("Sayı : ");
     scanf("%d",&n);
 
