@@ -15,7 +15,7 @@ int height(Node* n) {
 }
 
 // Maksimum değeri bulma
-int max(int a, int b) {
+int maks(int a, int b) {
     return (a > b) ? a : b;
 }
 
@@ -39,8 +39,8 @@ Node* rightRotate(Node* y) {
     y->left = T2;
 
     // Yükseklikleri güncelle
-    y->height = max(height(y->left), height(y->right)) + 1;
-    x->height = max(height(x->left), height(x->right)) + 1;
+    y->height = maks(height(y->left), height(y->right)) + 1;
+    x->height = maks(height(x->left), height(x->right)) + 1;
 
     return x;
 }
@@ -55,8 +55,8 @@ Node* leftRotate(Node* x) {
     x->right = T2;
 
     // Yükseklikleri güncelle
-    x->height = max(height(x->left), height(x->right)) + 1;
-    y->height = max(height(y->left), height(y->right)) + 1;
+    x->height = maks(height(x->left), height(x->right)) + 1;
+    y->height = maks(height(y->left), height(y->right)) + 1;
 
     return y;
 }
@@ -80,7 +80,7 @@ Node* insert(Node* node, int data) {
         return node; // Aynı değeri eklemeye çalışmıyoruz
 
     // 2. Adım: Düğümün yüksekliğini güncelle
-    node->height = 1 + max(height(node->left), height(node->right));
+    node->height = 1 + maks(height(node->left), height(node->right));
 
     // 3. Adım: Dengeyi kontrol et
     int balance = getBalance(node);
