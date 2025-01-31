@@ -53,9 +53,8 @@ void heapify(int heap[], int n){
 }
 
 int main(){
-    int n, i, j, c, root, temp;
-    
-    n = 5;
+    int n = 5;
+
 
     int heap[10] = {2, 3, 1, 0, 4}; // initialize the array
     

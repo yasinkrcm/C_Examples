@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-int quickSort(int arr [], int altindis , int ustindis){
+void quickSort(int arr [], int altindis , int ustindis){
     int i = altindis;
     int j = ustindis;
     int x = arr[(altindis + ustindis) / 2 ];
 
-    while (i<=j)
+    while (i <= j)
     {
         while (arr[i]<x)
             i++;
@@ -25,7 +25,6 @@ int quickSort(int arr [], int altindis , int ustindis){
     }
     
 }
-
 
 
 void printArray(int arr[], int length) {
