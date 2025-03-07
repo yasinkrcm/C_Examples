@@ -1,0 +1,121 @@
+Binary Multiplication Results
+Test 1:
+Num1: 00011101
+Num2: 00100001011
+Classical Time: 2.4e-05 sec
+Karatsuba Time: 0.000114 sec
+----------------------------------------
+Test 2:
+Num1: 001000001
+Num2: 1001110100100
+Classical Time: 2e-05 sec
+Karatsuba Time: 0.000155 sec
+----------------------------------------
+Test 3:
+Num1: 111001001001
+Num2: 001111101
+Classical Time: 1.7e-05 sec
+Karatsuba Time: 0.000149 sec
+----------------------------------------
+Test 4:
+Num1: 011011
+Num2: 100010001
+Classical Time: 7e-06 sec
+Karatsuba Time: 8.1e-05 sec
+----------------------------------------
+Test 5:
+Num1: 1001100010101
+Num2: 110010
+Classical Time: 9e-06 sec
+Karatsuba Time: 0.000136 sec
+----------------------------------------
+Test 6:
+Num1: 0011111
+Num2: 000100010
+Classical Time: 5e-06 sec
+Karatsuba Time: 0.000121 sec
+----------------------------------------
+Test 7:
+Num1: 00101010100
+Num2: 1101010100101
+Classical Time: 2.3e-05 sec
+Karatsuba Time: 0.000146 sec
+----------------------------------------
+Test 8:
+Num1: 111011001
+Num2: 01100
+Classical Time: 4e-06 sec
+Karatsuba Time: 9.6e-05 sec
+----------------------------------------
+Test 9:
+Num1: 100001101111
+Num2: 1110100011111
+Classical Time: 4.2e-05 sec
+Karatsuba Time: 0.000213 sec
+----------------------------------------
+Test 10:
+Num1: 101110110
+Num2: 000100011
+Classical Time: 1e-05 sec
+Karatsuba Time: 0.000109 sec
+----------------------------------------
+Test 11:
+Num1: 00011100
+Num2: 000100
+Classical Time: 3e-06 sec
+Karatsuba Time: 4.8e-05 sec
+----------------------------------------
+Test 12:
+Num1: 0100111011000
+Num2: 111110100100
+Classical Time: 2.5e-05 sec
+Karatsuba Time: 0.000183 sec
+----------------------------------------
+Test 13:
+Num1: 001100101
+Num2: 01110111110000
+Classical Time: 2.4e-05 sec
+Karatsuba Time: 0.00019 sec
+----------------------------------------
+Test 14:
+Num1: 01101101
+Num2: 011101011001
+Classical Time: 1.9e-05 sec
+Karatsuba Time: 0.00013 sec
+----------------------------------------
+Test 15:
+Num1: 00101100001000
+Num2: 1011100
+Classical Time: 1.2e-05 sec
+Karatsuba Time: 0.00019 sec
+----------------------------------------
+Test 16:
+Num1: 1111100
+Num2: 1110100
+Classical Time: 9e-06 sec
+Karatsuba Time: 6.2e-05 sec
+----------------------------------------
+Test 17:
+Num1: 00001
+Num2: 0110110110001
+Classical Time: 1.7e-05 sec
+Karatsuba Time: 0.00013 sec
+----------------------------------------
+Test 18:
+Num1: 00111101
+Num2: 10101100001010
+Classical Time: 1.9e-05 sec
+Karatsuba Time: 0.000169 sec
+----------------------------------------
+Test 19:
+Num1: 11110
+Num2: 01000
+Classical Time: 2e-06 sec
+Karatsuba Time: 3.1e-05 sec
+----------------------------------------
+Test 20:
+Num1: 100100
+Num2: 111111111010
+Classical Time: 2.6e-05 sec
+Karatsuba Time: 0.000145 sec
+----------------------------------------
